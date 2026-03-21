@@ -117,11 +117,13 @@
   }
 
   .status-improving {
-    @apply bg-primary/12 text-primary;
+    @apply text-primary;
+    background-color: hsl(var(--primary) / 0.12);
   }
 
   .status-failed {
-    @apply bg-destructive/12 text-destructive;
+    @apply text-destructive;
+    background-color: hsl(var(--destructive) / 0.12);
   }
 
   .input-field {
