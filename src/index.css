@@ -64,19 +64,19 @@
 
 @layer components {
   .panel {
-    @apply bg-card border border-border rounded-lg overflow-hidden;
+    @apply bg-card border border-border rounded-lg overflow-hidden shadow-sm;
   }
 
   .panel-header {
-    @apply px-4 py-3 border-b border-border flex items-center justify-between;
+    @apply px-5 py-3.5 border-b border-border flex items-center justify-between;
   }
 
   .panel-title {
-    @apply text-sm font-semibold uppercase tracking-wider text-muted-foreground;
+    @apply text-xs font-semibold uppercase tracking-widest text-muted-foreground;
   }
 
   .panel-body {
-    @apply p-4;
+    @apply p-5;
   }
 
   .metric-value {
