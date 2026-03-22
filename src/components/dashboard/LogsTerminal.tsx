@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { Terminal } from "lucide-react";
 
 const logLines = [
-  { time: "14:23:01", msg: "[INIT] Starting optimization pipeline v2.4.1", type: "info" },
+  { time: "14:23:01", msg: "[INIT] AIDE optimization pipeline v2.4.1 started", type: "info" },
   { time: "14:23:01", msg: "[PARSE] Extracted 6 constraints from user input", type: "info" },
   { time: "14:23:02", msg: "[LLM] Generating initial circuit topology...", type: "info" },
   { time: "14:23:05", msg: "[LLM] Response received — two-stage folded-cascode OTA", type: "success" },
