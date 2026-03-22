@@ -34,25 +34,25 @@ const Index = () => {
         <PipelineVisualization />
       </div>
 
-      {/* Top row: Input + Iterations + Results */}
+      {/* Top row: Input + Iterations */}
       <div className="flex-1 p-6 grid grid-cols-12 gap-5 min-h-0">
-        <div className="col-span-12 lg:col-span-4 min-h-[360px]">
+        <div className="col-span-12 lg:col-span-5 min-h-[360px]">
           <InputPanel />
         </div>
-        <div className="col-span-12 lg:col-span-4 min-h-[360px]">
+        <div className="col-span-12 lg:col-span-7 min-h-[360px]">
           <IterationPanel />
-        </div>
-        <div className="col-span-12 lg:col-span-4 min-h-[360px]">
-          <ResultsDashboard />
         </div>
       </div>
 
-      {/* Bottom row: Netlist + Logs */}
+      {/* Bottom row: Results + Netlist + Logs */}
       <div className="px-6 pb-6 grid grid-cols-12 gap-5">
-        <div className="col-span-12 lg:col-span-6 h-[220px]">
+        <div className="col-span-12 lg:col-span-4 h-[220px]">
+          <ResultsDashboard />
+        </div>
+        <div className="col-span-12 lg:col-span-4 h-[220px]">
           <NetlistViewer />
         </div>
-        <div className="col-span-12 lg:col-span-6 h-[220px]">
+        <div className="col-span-12 lg:col-span-4 h-[220px]">
           <LogsTerminal />
         </div>
       </div>
