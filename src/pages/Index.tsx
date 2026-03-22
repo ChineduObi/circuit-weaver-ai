@@ -34,32 +34,25 @@ const Index = () => {
         <PipelineVisualization />
       </div>
 
-      {/* Main grid */}
+      {/* Top row: Input + Iterations + Results */}
       <div className="flex-1 p-6 grid grid-cols-12 gap-5 min-h-0">
-        {/* Left column: Input */}
-        <div className="col-span-12 lg:col-span-3 min-h-[320px]">
+        <div className="col-span-12 lg:col-span-4 min-h-[360px]">
           <InputPanel />
         </div>
-
-        {/* Center: Iterations + Results */}
-        <div className="col-span-12 lg:col-span-5 flex flex-col gap-5 min-h-0">
-          <div className="flex-1 min-h-[220px]">
-            <IterationPanel />
-          </div>
-          <div className="flex-1 min-h-[220px]">
-            <ResultsDashboard />
-          </div>
+        <div className="col-span-12 lg:col-span-4 min-h-[360px]">
+          <IterationPanel />
         </div>
-
-        {/* Right column: Netlist */}
-        <div className="col-span-12 lg:col-span-4 min-h-[320px]">
-          <NetlistViewer />
+        <div className="col-span-12 lg:col-span-4 min-h-[360px]">
+          <ResultsDashboard />
         </div>
       </div>
 
-      {/* System Logs — full width bottom */}
-      <div className="px-6 pb-6">
-        <div className="h-[200px]">
+      {/* Bottom row: Netlist + Logs */}
+      <div className="px-6 pb-6 grid grid-cols-12 gap-5">
+        <div className="col-span-12 lg:col-span-6 h-[220px]">
+          <NetlistViewer />
+        </div>
+        <div className="col-span-12 lg:col-span-6 h-[220px]">
           <LogsTerminal />
         </div>
       </div>
