@@ -51,14 +51,16 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Right column: Logs + Netlist */}
-        <div className="col-span-12 lg:col-span-4 flex flex-col gap-5 min-h-0">
-          <div className="flex-1 min-h-[220px]">
-            <LogsTerminal />
-          </div>
-          <div className="flex-1 min-h-[220px]">
-            <NetlistViewer />
-          </div>
+        {/* Right column: Netlist */}
+        <div className="col-span-12 lg:col-span-4 min-h-[320px]">
+          <NetlistViewer />
+        </div>
+      </div>
+
+      {/* System Logs — full width bottom */}
+      <div className="px-6 pb-6">
+        <div className="h-[200px]">
+          <LogsTerminal />
         </div>
       </div>
     </div>
