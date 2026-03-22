@@ -36,10 +36,10 @@ const Index = () => {
 
       {/* Top row: Input + Iterations */}
       <div className="flex-1 p-6 grid grid-cols-12 gap-5 min-h-0">
-        <div className="col-span-12 lg:col-span-5 min-h-[360px]">
+        <div className="col-span-12 lg:col-span-6 min-h-[360px]">
           <InputPanel />
         </div>
-        <div className="col-span-12 lg:col-span-7 min-h-[360px]">
+        <div className="col-span-12 lg:col-span-6 min-h-[360px]">
           <IterationPanel />
         </div>
       </div>
