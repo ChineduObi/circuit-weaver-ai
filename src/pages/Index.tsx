@@ -46,7 +46,7 @@ const Index = () => {
 
       {/* Bottom row: Results + Netlist + Logs */}
       <div className="px-6 pb-6 grid grid-cols-12 gap-5">
-        <div className="col-span-12 lg:col-span-4 h-[220px]">
+        <div className="col-span-12 lg:col-span-4 h-[360px]">
           <ResultsDashboard />
         </div>
         <div className="col-span-12 lg:col-span-4 h-[220px]">
